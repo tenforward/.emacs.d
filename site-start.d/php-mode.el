@@ -1,6 +1,20 @@
+;(require 'php-mode)
+;(setq php-mode-force-pear nil)
+;(add-hook 'php-mode-user-hook 
+;          '(lambda () 
+;             (setq tab-width 4) 
+;             (setq c-basic-offset 4)
+;             (setq indent-tabs-mode t))
+;          )
+
+(load-library "php-mode")
 (require 'php-mode)
-(add-hook 'php-mode-user-hook 
-          '(lambda () 
-             (setq tab-width 2) 
-             (setq indent-tabs-mode nil)) 
-          )
+(add-hook 'php-mode-hook
+          '(lambda ()
+             (setq c-basic-offset 4)
+             (setq c-tab-width 4)
+             (setq c-indent-level 4)
+             (setq tab-width 4)
+             (setq indent-tabs-mode t)
+             (setq-default tab-width 4)
+             ))
