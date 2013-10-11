@@ -19,7 +19,7 @@
 
 ;;; カーソルの位置が何行何桁目かを表示する
 (line-number-mode t)
-;(column-number-mode t)
+(column-number-mode t)
 
 ;;; フレームの左側に行番号表示する wb-line-number
 ;;; F11 キーで ON/OFF できます．

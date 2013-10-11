@@ -8,16 +8,16 @@
 
 ;;; 日本語環境 
 (set-language-environment "Japanese")
-(set-default-coding-systems 'euc-japan)
+;(set-default-coding-systems 'euc-japan)
 
 ;; 
 ;; 見た目
 ;; 
 
 ;;; メニューバーを日本語にします
-(setq menu-coding-system 'euc-japan)
-(if (equal (substring (concat (getenv "LANG") "__") 0 2) "ja")
-    (load "menu-tree"))
+;(setq menu-coding-system 'euc-japan)
+;(if (equal (substring (concat (getenv "LANG") "__") 0 2) "ja")
+;    (load "menu-tree"))
 
 ;;; Window システムで起動した場合
 (if window-system
@@ -64,21 +64,23 @@
       ;;; Emacs23 以上の設定 (TrueType/OpenType フォントの使用)
       (if (>= emacs-major-version 23)
           (progn
-	    (set-default-font "Bitstream Vera Sans Mono-8")
+;	    (set-default-font "Bitstream Vera Sans Mono-8")
+	    (set-default-font "Inconsolata-9")
 	    (set-fontset-font
 	     (frame-parameter nil 'font)
 	     'japanese-jisx0208
-	     '("ヒラギノ丸ゴ Pro" . "iso10646-1"))
+	     '("ヒラギノ角ゴ Pro" . "iso10646-1"))
 ;	     '("VL ゴシック" . "iso10646-1"))
 	    (set-fontset-font
 	     (frame-parameter nil 'font)
 	     'japanese-jisx0212
-	     '("ヒラギノ丸ゴ Pro" . "iso10646-1"))
+	     '("ヒラギノ角ゴ Pro" . "iso10646-1"))
 ;	     '("VL ゴシック" . "iso10646-1"))
             ;; Ascii フォントと日本語フォントの幅を調整する
 ;	    (setq face-font-rescale-alist
 ;		  '((".*IPAexゴシック" . 1.3)
 ;		    (".*VL ゴシック.*" . 1.3)
+;                    (".*ヒラギノ.*". 1.2)
 ;		    ("-cdac$" . 1.3)))
 	    )) ; Emacs23 以上の設定
 

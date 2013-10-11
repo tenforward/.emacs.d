@@ -12,5 +12,6 @@
          (local-set-key "\M-t" 'gtags-find-tag)
          (local-set-key "\M-r" 'gtags-find-rtag)
          (local-set-key "\M-s" 'gtags-find-symbol)
+         (local-set-key "\M-p" 'gtags-find-pattern)
          (local-set-key "\C-t" 'gtags-pop-stack)
          ))

@@ -27,3 +27,10 @@
 ;(setq dviprint-command-format "dvips %f %t -f %s | lpr")
 (setq dviprint-command-format "dvipdfmx %s")
 (setq dvi2-command "evince")
+
+(add-hook 'php-mode-hook
+          '(lambda ()
+             (setq tab-width 2)
+             (setq indent-tabs-mode nil)
+             (setq-default tab-width 2)
+             ))
