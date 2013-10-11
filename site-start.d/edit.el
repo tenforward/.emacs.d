@@ -3,7 +3,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;; 最終更新日の自動挿入
-;;;   ファイルの先頭から 8 行以内に Time-stamp: <2011-06-14 20:23:13 karma> または
+;;;   ファイルの先頭から 8 行以内に Time-stamp: <2013-10-11 15:38:41 karma> または
 ;;;   Time-stamp: " " と書いてあれば、セーブ時に自動的に日付が挿入されます
 (add-hook 'write-file-hooks 'time-stamp)
 
@@ -49,3 +49,6 @@
 
 ;;; 対応する括弧の表示
 (show-paren-mode 1)
+
+;;; 特定ファイルを UTF-8 で開く
+(modify-coding-system-alist 'file "COMMIT_EDITMSG" 'utf-8)
