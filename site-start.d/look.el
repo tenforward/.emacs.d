@@ -27,7 +27,7 @@
       ;;; スクロールバー
       (set-scroll-bar-mode 'right)
       ;;; Emacs21 以上の設定 (これも必要かな? if 文は取って単なる progn に入れてもよいかも?)
-      (if (>= emacs-major-version 21)
+      (when (>= emacs-major-version 21)
 	  (progn
 	    ;;; カーソルを点滅させない
 	    (blink-cursor-mode nil)
@@ -62,7 +62,7 @@
 	    )) ; Emacs21 以上の設定
 
       ;;; Emacs23 以上の設定 (TrueType/OpenType フォントの使用)
-      (if (>= emacs-major-version 23)
+      (when (>= emacs-major-version 23)
           (progn
 ;	    (set-default-font "Bitstream Vera Sans Mono-8")
 	    (set-default-font "Inconsolata-9")
