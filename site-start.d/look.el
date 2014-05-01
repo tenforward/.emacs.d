@@ -65,16 +65,21 @@
       (when (>= emacs-major-version 23)
           (progn
 ;	    (set-default-font "Bitstream Vera Sans Mono-8")
-	    (set-default-font "Inconsolata-9")
+;	    (set-default-font "Inconsolata-9")
+	    (set-default-font "Aurulent Sans Mono-8")
 	    (set-fontset-font
 	     (frame-parameter nil 'font)
 	     'japanese-jisx0208
-	     '("¥Ò¥é¥®¥Î³Ñ¥´ Pro" . "iso10646-1"))
+	     '("¥Ò¥é¥®¥Î´Ý¥´ Pro" . "iso10646-1"))
+;	     '("¥Ò¥é¥®¥ÎÌÀÄ« Pro" . "iso10646-1"))
+;	     '("¥Ò¥é¥®¥Î³Ñ¥´ Pro" . "iso10646-1"))
 ;	     '("VL ¥´¥·¥Ã¥¯" . "iso10646-1"))
 	    (set-fontset-font
 	     (frame-parameter nil 'font)
 	     'japanese-jisx0212
-	     '("¥Ò¥é¥®¥Î³Ñ¥´ Pro" . "iso10646-1"))
+;	     '("¥Ò¥é¥®¥Î´Ý¥´ Pro" . "iso10646-1"))
+	     '("¥Ò¥é¥®¥ÎÌÀÄ« Pro" . "iso10646-1"))
+;	     '("¥Ò¥é¥®¥Î³Ñ¥´ Pro" . "iso10646-1"))
 ;	     '("VL ¥´¥·¥Ã¥¯" . "iso10646-1"))
             ;; Ascii ¥Õ¥©¥ó¥È¤ÈÆüËÜ¸ì¥Õ¥©¥ó¥È¤ÎÉý¤òÄ´À°¤¹¤ë
 ;	    (setq face-font-rescale-alist
