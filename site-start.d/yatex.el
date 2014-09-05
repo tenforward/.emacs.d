@@ -18,8 +18,8 @@
       (cons (cons "\\.html$" 'yahtml-mode)
 	    auto-mode-alist))
 
-(setq YaTeX-kanji-code 3)	; EUCにする
-(setq yahtml-kanji-code 3)	; EUCにする
+(setq YaTeX-kanji-code nil)  ; 開いたままのコード
+(setq yahtml-kanji-code nil) ; 開いたままのコード
 (setq yahtml-www-browser "firefox")
 (setq tex-command "platex")
 (setq dviprint-from-format "-p %b")
