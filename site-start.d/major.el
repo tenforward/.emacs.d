@@ -13,13 +13,13 @@
 ;;	     (c-set-style "stroustrup")
 ;;	     (c-set-style "whitesmith")
 ;;	     (c-set-style "ellemtel")
-;;	     (c-set-style "linux")
+	     (c-set-style "linux")
 	     ; 漢字を追加した時に…，
 	     ; 文字コードを質問してから保存してほしい場合．
 ;;	     (my-set-file-encoding default-buffer-file-coding-system)
 	     ; EUCで速攻で保存する場合．
-	     (my-set-file-encoding-quick 'euc-japan)
-	     (setq c-basic-offset 4)
+	     ;(my-set-file-encoding-quick 'euc-japan)
+;;	     (setq c-basic-offset 4)
 ;;	     (setq tab-width 4)
 ;;	     (setq c-auto-newline t)
 	     ) t)
@@ -35,7 +35,7 @@
 	     ; 文字コードを質問してから保存してほしい場合．
 ;;	     (my-set-file-encoding default-buffer-file-coding-system)
 	     ; EUCで速攻で保存する場合．
-	     (my-set-file-encoding-quick 'euc-japan)
+	     ;(my-set-file-encoding-quick 'euc-japan)
 	     ) t)
 
 ;;; navi2ch
