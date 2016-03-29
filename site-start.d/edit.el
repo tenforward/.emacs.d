@@ -3,7 +3,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;; 最終更新日の自動挿入
-;;;   ファイルの先頭から 8 行以内に Time-stamp: <2014-05-01 20:07:05 karma> または
+;;;   ファイルの先頭から 8 行以内に Time-stamp: <2016-03-29 18:07:22 karma> または
 ;;;   Time-stamp: " " と書いてあれば、セーブ時に自動的に日付が挿入されます
 (add-hook 'write-file-hooks 'time-stamp)
 
@@ -42,7 +42,7 @@
 (global-set-key (kbd "C-h") 'delete-backward-char)
 
 ;;; タブを使わない
-(setq-default indent-tabs-mode nil)
+;;(setq-default indent-tabs-mode nil)
 
 ;;; マーク領域を色付け
 (setq transient-mark-mode t)
@@ -51,7 +51,8 @@
 (show-paren-mode 1)
 
 ;;; 特定ファイルを UTF-8 で開く
-(modify-coding-system-alist 'file "COMMIT_EDITMSG" 'utf-8)
+;(modify-coding-system-alist 'file "COMMIT_EDITMSG" 'utf-8)
+;(modify-coding-system-alist 'file "git-rebase-todo" 'utf-8)
 
 ;;; スクロールダウンを Super-V にも割り当てる
 (define-key global-map (kbd "s-v") 'scroll-down)
